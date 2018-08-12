@@ -38,6 +38,11 @@ public class CalculatorSteps {
         calculator.multiply(number1, number2);
     }
     
+    @When("^I divide (\\d+) / (\\d+)$")
+    public void i_divide(int number1, int number2) throws Throwable {
+        calculator.divide(number1, number2);
+    }
+    
     @Then("^the result should be (\\d+)$")
     public void the_result_should_be(int result) throws Throwable {
         assertEquals(result, calculator.getResult());

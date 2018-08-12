@@ -33,3 +33,8 @@ Scenario: Multiply two numbers
     Given I have a calculator
     When I multiply 8 x 8
     Then the result should be 64
+
+Scenario: Divide two numbers
+    Given I have a calculator
+    When I divide 8 / 8
+    Then the result should be 1
