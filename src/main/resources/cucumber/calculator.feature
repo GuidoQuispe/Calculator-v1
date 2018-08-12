@@ -14,6 +14,11 @@ Scenario: Subtract two numbers
     When I subtract 8 - 3
     Then the result should be 5
 
+Scenario: Subtract two numbers
+    Given I have a calculator
+    When I subtract 10 - 5
+    Then the result should be 5
+
 Scenario: Multiply two numbers
     Given I have a calculator
     When I multiply 8 x 5
