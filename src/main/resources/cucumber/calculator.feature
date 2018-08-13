@@ -9,3 +9,7 @@ Feature: Calculator
     When I add 2 plus 3
     Then the result should be 5
 
+Scenario: Add two numbers
+    Given I have a calculator
+    When I add 4 plus 3
+    Then the result should be 7
